@@ -1,0 +1,12 @@
+# Start: APP_PASSWORD in .env eintragen, dann "docker compose up -d"
+services:
+  buchhaltung:
+    build: .
+    container_name: ea-buchhaltung
+    restart: unless-stopped
+    environment:
+      - APP_PASSWORD=${APP_PASSWORD:?APP_PASSWORD in .env setzen}
+    volumes:
+      - ./data:/data
+    ports:
+      - "8080:8080"

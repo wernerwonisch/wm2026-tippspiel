@@ -1,0 +1,12 @@
+{
+  "name": "ea-buchhaltung",
+  "version": "1.0.0",
+  "description": "Einnahmen-Ausgaben-Rechnung (Österreich) als selbst gehostete Web-App/PWA",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  }
+}
